@@ -2,6 +2,8 @@
 
 <h3>Install</h3>
 composer require laravel/sail --dev <br />
+./vendor/bin/sail up -d
+./vendor/bin/sail artisan migrate<br />
 ./vendor/bin/sail npm install<br />
 ./vendor/bin/sail npm run dev
 
