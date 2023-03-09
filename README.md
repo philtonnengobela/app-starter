@@ -2,6 +2,10 @@
 
 <h3>Install</h3>
 composer require laravel/sail --dev <br />
+copy the env.example and create the .env<br />
+php artisan sail:install<br />
+./vendor/bin/sail up -d<br />
+./vendor/bin/sail artisan migrate<br />
 ./vendor/bin/sail npm install<br />
 ./vendor/bin/sail npm run dev
 
