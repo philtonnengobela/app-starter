@@ -27,6 +27,11 @@ In your project run the following Git commands<br />
 - git remote set-url origin "the url of the git repository"
 - update the default branch
 
+## Workflow / Action
+Create workfloy to deploy files to FTP
+- Add new action
+- Add secrets to repository (ftp_username/ftp_password)
+- pull new updates to your project branch
 
 ## About Laravel
 
