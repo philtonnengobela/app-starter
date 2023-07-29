@@ -9,7 +9,16 @@ php artisan sail:install<br />
 ./vendor/bin/sail artisan migrate<br />
 <i>mysql username: root and Password: password</i><br />
 ./vendor/bin/sail npm install<br />
-./vendor/bin/sail npm run dev
+./vendor/bin/sail npm run dev<br />
+<i>Add "watch": "vite build --watch" to package.json file</i><br />
+<code>
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "watch": "vite build --watch"
+    },
+</code><br />
+Run ./vendor/bin/sail npm install<br />
 
 ## About Laravel
 
