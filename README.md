@@ -20,6 +20,14 @@ php artisan sail:install<br />
 </code><br />
 Run ./vendor/bin/sail npm install<br />
 
+## Pushing To GIT
+Create new repository on GIT and make it Private<br />
+In your project run the following Git commands<br />
+- git init
+- git remote set-url origin "the url of the git repository"
+- update the default branch
+
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
