@@ -6,6 +6,7 @@
 
 import './bootstrap';
 import { createApp } from 'vue';
+import { Icon } from '@iconify/vue'; // Correct import
 
 /**
  * Next, we will create a fresh Vue application instance. You may then begin
@@ -15,8 +16,22 @@ import { createApp } from 'vue';
 
 const app = createApp({});
 
+app.component('Icon', Icon);
+
 import ExampleComponent from './components/ExampleComponent.vue';
 app.component('example-component', ExampleComponent);
+
+import WelcomeIntro from './components/WelcomeIntro.vue';
+app.component('welcome-intro', WelcomeIntro);
+
+import Dashboard from './components/Dashboard.vue';
+app.component('dashboard', Dashboard);
+
+//LAYOUT
+import MainLayoutPrefix from './components/layout/MainLayout.vue';
+app.component('main-layout-prefix', MainLayoutPrefix);
+import HeaderNav from './components/layout/HeaderNav.vue';
+app.component('header-nav', HeaderNav);
 
 /**
  * The following block of code may be used to automatically register your
@@ -35,5 +50,6 @@ app.component('example-component', ExampleComponent);
  * an "id" attribute of "app". This element is included with the "auth"
  * scaffolding. Otherwise, you will need to add an element yourself.
  */
+
 
 app.mount('#app');

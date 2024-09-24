@@ -10,22 +10,17 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/logo.png">
     <!-- Custom Stylesheet -->
-    <link rel="stylesheet" href="app_assets/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- Scripts -->
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    @vite(['resources/sass/app.scss', 'resources/js/app.js', 'resources/css/app.css'])
 </head>
-<body class="@@class">
+<body>
 
-<div id="preloader">
-    <i>.</i>
-    <i>.</i>
-    <i>.</i>
-</div>
-
-<main class="py-4">
+<main>
    @yield('content')
 </main>
 
